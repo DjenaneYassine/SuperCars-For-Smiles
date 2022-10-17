@@ -3,16 +3,15 @@
     margin: 0px;
 }
 
+
+/* Page d'acceuil */
+
 header,body,html{
     width: 100%;
     height: 100%;
 }
 
-button{
-    color: white;
-    background: none;
-    border: 2px solid white;
-}
+    /* Background Image */
 
 header{
     background-image: url("./Source/img/bg-mainV2.png");
@@ -25,15 +24,19 @@ header{
 img{
     padding: 0px;
     margin: 0px;
+
 }
+
+    /* Navigation */
+
 ul{
     list-style: none;
     padding: 10px;
 }
 a{
     text-decoration: none;
-    padding: 20px;
-    color: white;
+    margin: 20px;
+    color: rgba(255, 255, 255, 0.464);
 }
 li{
     display: inline-block;
@@ -45,24 +48,22 @@ li{
 
 }
 
-.title{
+    /* Titre Principale */
+.content-title{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.box-title{
     letter-spacing: 5px;
+    font-size: xx-large;
     color: white;
     padding-top: 80px;
+    text-align: center;
 }
 
-.chevron{
-    color: #FEEAA1;
-}
-.h1{
-    letter-spacing: 9px;
-    font-size: x-large;
 
-}
+
 .edition{
     margin-top: 0px;
     padding-top: 5px;
@@ -70,26 +71,108 @@ li{
     font-size: x-small;
 }
 
-.button{
-    height: 30%;
+
+    /* Section Button Tarif et Info*/
+
+button{
+    color: white;
+    background: none;
+    border: 1px solid white;
+}
+
+.wrapper-btn{
     display: flex;
-    align-items: center;
     justify-content: center;
-    position: relative;
-    top: 350px;
+}
+
+.content-btn{
+    position: absolute;
+    top: 800px;
 }
 
 .btn-tarif{
+    height: 38px;
     padding: 10px 80px 10px 80px;
-    margin: 10px;
     border-radius: 5px;
+    margin: 5px;
+    box-shadow: 0px 0px 5px 4px rgb(255 255 255 / 25%)
 }
 
 .btn-info{
+    vertical-align: middle;
+    margin: 5px;
     padding: 10px 80px 10px 80px;
-    margin: 10px;
+    border: white;
     border-radius: 5px;
     background-color: white;
     color: black;
+    box-shadow: 0px 0px 5px 4px rgb(255 255 255 / 25%);
 
+}
+
+.logo-info{
+    display: inline-block;
+    vertical-align: middle;
+
+
+}
+
+.logo-tarif{
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(198deg) brightness(106%) contrast(101%);
+    vertical-align: middle;
+
+}
+
+.logo-chevron{
+    filter: invert(87%) sepia(34%) saturate(435%) hue-rotate(346deg) brightness(103%) contrast(99%);
+    width: 10px;
+    padding-left: 5px;
+
+}
+
+.info, .tarif{
+    font-size: medium;
+    vertical-align: middle;
+    font-weight: bolder;
+}
+
+    /* Hover Navigation, Tile, Button*/
+
+.box-title,a{
+    transition: 1s ease;
+}
+
+.btn-info,.btn-tarif{
+    transition: 0.5s ease;
+}
+
+a:hover{
+    text-decoration: overline 5% #FEEAA1;
+    color: white;
+}
+
+.box-title:hover{
+    cursor: default;
+    font-size: 2rem;
+    letter-spacing: 0.4rem;
+    
+}
+
+.btn-info:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 4px rgb(255 255 255 / 80%);
+}
+
+.btn-tarif:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 4px rgb(255 255 255 / 80%);
+}
+
+    /* Responsive --> Breakpoint */
+
+
+@media screen and (max-height : 850px) {
+    .content-btn{
+        top: 650px;
+    }
 }
