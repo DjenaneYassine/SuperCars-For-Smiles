@@ -12,8 +12,9 @@ header,body,html{
     height: 100%;
     background-image: url("./Source/img/Sprinkle.svg");
     
-
+    
 }
+
 
     /* Background Image */
 
@@ -53,6 +54,7 @@ li{
 }
 
     /* Titre Principale */
+
 .content-title{
     display: flex;
     justify-content: center;
@@ -66,113 +68,11 @@ li{
     text-align: center;
 }
 
-
-
 .edition{
     margin-top: 0px;
     padding-top: 5px;
     color: #FEEAA1;
     font-size: x-small;
-}
-
-
-    /* Section Button Tarif et Info*/
-
-button{
-    color: white;
-    background: none;
-    border: 1px solid white;
-}
-
-.wrapper-btn{
-    display: flex;
-    justify-content: center;
-}
-
-.content-btn{
-    position: absolute;
-    top: 800px;
-}
-
-/* .btn-tarif{
-    height: 38px;
-    padding: 10px 80px 10px 80px;
-    border-radius: 5px;
-    margin: 5px;
-    box-shadow: 0px 0px 5px 4px rgb(255 255 255 / 25%)
-} */
-
-/* .btn-info{
-    vertical-align: middle;
-    margin: 5px;
-    padding: 10px 80px 10px 80px;
-    border: white;
-    border-radius: 5px;
-    background-color: #f4f4f4;
-    color: rgb(0, 0, 0);
-    box-shadow: 0px 0px 5px 4px rgb(255 255 255 / 25%);
-
-} */
-.btn-tarif{ 
-    background-color: rgba(23, 26, 32, 0.8); 
-    border: none; 
-    border-radius: 6px; 
-    color: #fff; 
-    flex-grow: 1; 
-    font-family: SFProText-Regular, Helvetica, Arial, sans-serif; 
-    font-size: 15px; 
-    height: 36px; 
-    line-height: 20px; 
-    margin-left: 8px; 
-    margin-right: 6px; 
-    min-width: 185px; 
-    padding: 0 16px 0 16px; 
-    color:white; 
-    cursor: pointer; 
-    } 
-    
-    .btn:hover{ 
-    background-color: rgb(231, 231, 231); 
-    cursor: pointer; 
-    } 
- 
-.btn-info{ 
-    background-color: rgba(23, 26, 32, 0.8); 
-    border: none; 
-    border-radius: 6px; 
-    color: #fff; 
-    flex-grow: 1; 
-    font-family: SFProText-Regular, Helvetica, Arial, sans-serif; 
-    font-size: 15px; 
-    height: 36px; 
-    line-height: 20px; 
-    margin-left: 8px; 
-    margin-right: 6px; 
-    min-width: 185px; 
-    padding: 0 16px 0 16px; 
-    color:white; 
-    cursor: pointer; 
-    } 
-    
-    .btn:hover{ 
-    background-color: rgba(23, 26, 32, 1); 
-    cursor: pointer; 
-    } 
-    
-
-.logo-info{
-    display: inline-block;
-    vertical-align: middle;
-    filter: invert(0%) sepia(100%) saturate(29%) hue-rotate(133deg) brightness(93%) contrast(107%);
-
-
-
-}
-
-.logo-tarif{
-    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(198deg) brightness(106%) contrast(101%);
-    vertical-align: middle;
-
 }
 
 .logo-chevron{
@@ -182,21 +82,13 @@ button{
 
 }
 
-.info, .tarif{
-    font-size: medium;
-    vertical-align: middle;
-    font-weight: bolder;
-}
 
-    /* Hover Navigation, Tile, Button*/
+    /* Hover Navigation, Tile*/
 
 .box-title,a{
     transition: 1s ease;
 }
 
-.btn-info,.btn-tarif{
-    transition: 0.5s ease;
-}
 
 a:hover{
     text-decoration: overline 5% #f4f4f4;
@@ -208,25 +100,6 @@ a:hover{
     font-size: 2rem;
     letter-spacing: 0.4rem;
     
-}
-/* 
-.btn-info:hover{
-    cursor: pointer;
-    box-shadow: 0px 0px 10px 4px rgba(193, 170, 24, 0.947);
-}
-
-.btn-tarif:hover{
-    cursor: pointer;
-    box-shadow: 0px 0px 10px 4px rgb(255 255 255 / 80%);
-} */
-
-    /* Responsive --> Breakpoint */
-
-
-@media screen and (max-height : 850px) {
-    .content-btn{
-        top: 650px;
-    }
 }
 
 /* Page Main */
@@ -251,24 +124,33 @@ a:hover{
     font-weight: bolder;
     font-size: xxx-large;
     margin-bottom: 30px;
+    color: #3B3B3B;
 }
 
 .text-p2{
+    color: #3b3b3b82;
     margin-bottom: 30px;
     
 }
 
 .btn-main{
-    color: white;
+    color: #3B3B3B;
     background: #FEEAA1;
     padding: 10px 30px 10px 30px;
     font-weight: 700;
     display: inline-block;
+    border: none;
+    box-shadow: 0px 0px 3px 0px #00000030;
+    cursor: pointer;
+    
 }
 
+.text-btn-main{
+    vertical-align: middle;
+}
 
 .logo-btn-main{
-    filter: invert(100%) sepia(1%) saturate(1685%) hue-rotate(347deg) brightness(116%) contrast(100%);
+    filter: invert(17%) sepia(6%) saturate(14%) hue-rotate(359deg) brightness(90%) contrast(78%);
     padding-left:5px;
     vertical-align: middle;
 }
@@ -280,7 +162,7 @@ a:hover{
     vertical-align: top;
     margin-top: 5%;
     margin-right: 5%;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.349);
+    box-shadow: 0px 0px 20px 1px rgb(0 0 0 / 17%);
     border-radius: 1px;
 }
 
@@ -367,39 +249,49 @@ a:hover{
     grid-area: tel;
 }
 
-.btn-form{
+#btn-form{
     grid-area: btn;
     
 }
 
-.btn-form{ 
-    margin-top: 4%;
-    background-color: #3B3B3B; 
-    border: none; 
-    border-radius: 6px; 
-    color: #fff; 
-    flex-grow: 1; 
-    font-family: SFProText-Regular, Helvetica, Arial, sans-serif; 
-    font-size: 15px; 
-    height: 36px; 
-    line-height: 20px; 
-    margin-left: 8px; 
-    margin-right: 6px; 
-    min-width: 185px; 
-    padding: 0 16px 0 16px; 
-    color:white; 
-    cursor: pointer; 
-    } 
-    
-    .btn:hover{ 
-    background-color: #3B3B3B; 
-    cursor: pointer; 
-    } 
+#btn-form{ 
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    height: 20px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s ease;
+    background: #3B3B3B;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 40px;
+}
+
+.container-icon{
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+.icon{
+    width: 20px;
+
+}
+.txt{
+    vertical-align: middle;
+}
     
 input:focus, textarea:focus{
     border: none;
     outline: none;
 }
+
 input{
     padding: 10px;
     height: 25px;
@@ -425,6 +317,9 @@ label{
     color: #3B3B3B;
     padding: 3px;
 }
+
+
+
 
 
 /* Footer */
@@ -461,7 +356,8 @@ label{
 .logo-footer{
     filter: invert(81%) sepia(43%) saturate(342%) hue-rotate(347deg) brightness(106%) contrast(104%);
     width: 20px;
-    padding-right: 15px;
+    padding-right: 30px;
+    cursor: pointer;
 
 }
 .reseau{
@@ -483,6 +379,7 @@ label{
 
 .p2{
     color: white;
+    margin-top: 17%;
 }
 
 

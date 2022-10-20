@@ -29,19 +29,6 @@
                 <p class="edition">Edition 2023</p>
             </div>
         </div>
-        <div class="wrapper-btn">
-            <div class="content-btn">
-                <button class="btn-tarif">
-                    <img class="logo-tarif" src="./Source/img/currency-exchange.svg">
-                    <span class="tarif">Tarif</span>
-                </button>
-                
-                <button class="btn-info">
-                    <img class="logo-info" src="./Source/img/info-lg.svg">
-                    <span class="info">Info</span>
-                </button>
-            </div>
-        </div>
     </header>
     <main class="content-main">
         <div class="wrapper-main">
@@ -55,6 +42,10 @@
             <button class="btn-main">
                 <span class="text-btn-main">EN SAVOIR PLUS</span>
                 <img class="logo-btn-main" src="./Source/img/arrow-bar-right.svg">
+            </button>
+            <button class="btn-main">
+                <span class="text-btn-main">TARIF</span>
+                <img class="logo-btn-main" src="./Source/img/currency-exchange.svg">
             </button>
         </div>
         <video class="video-main" controls>
@@ -83,7 +74,9 @@
                         <label for="monNom">Message</label>
                         <textarea rows="10" id="message" name="message"></textarea>
                     </div>
-                    <button type="submit" class="btn-form">Envoyer</button>
+                    <button type="submit" id="btn-form">
+                        Envoyer
+                    </button>
                 </form>
             </div>
         </div>
@@ -136,6 +129,12 @@
             </div>
         </footer>
     </main>
-        
+        <script>
+            const btn = document.getElementById('btn-form')
+
+            btn.addEventListener('click', () =>{
+                this.classList.toggle('active')
+            })
+        </script>
 </body>
 </html>
